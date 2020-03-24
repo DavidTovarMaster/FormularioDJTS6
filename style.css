@@ -1,0 +1,41 @@
+*{
+	position: relative;
+}
+
+form{
+	font-family: Verdana;
+}
+
+.onlytitle{
+	border-radius: 20px;
+	background-color: #bc47ae;
+	width: 50%;
+	left: 240px;
+}
+
+.perinfo{
+	border-radius: 20px;
+	background-color: #e65782;
+	left: 235px;
+	text-align: center;
+}
+
+body{
+	background-color: #775579; 
+}
+
+table{
+	margin:auto;
+}
+
+td{
+	border-radius: 5px;
+}
+
+table tr td ins{
+	color: green;	
+}
+
+tr{
+	background-color: violet;
+	border-radius: 20px;

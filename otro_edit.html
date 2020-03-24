@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css"></li>
+	<title>Formulario balurdo</title>
+	<script type="text/javascript" src="jquery.js"></script>
+</head>
+<body>
+
+	<div class="onlytitle">
+		<center><h1>Curriculum Vitae</h1></center>
+		<center><h4>Data recording</h4></center>
+	</div>
+
+	<form action="#" method="post" name="formu"></form>
+	<table width="70%" id="principal">
+		
+		<tr>
+			<td class="perinfo">Personal information</td>
+		</tr>
+
+		<tr>
+			<td><ins>Sex</ins></td>
+			<td>
+				<select>
+					<option value="Hombre" id="sexohombre" title="sexohombre">Male</option>
+					<option value="Mujer" id="sexomujer" title="sexomujer">Woman</option>
+					<option value="Elicoptero" id="sexoelicop" title="sexoelicop">Helicopter Apache</option>
+				</select>
+				<br>
+				<small>With that identify you</small>
+			</td>
+		</tr>
+
+		<tr>
+			<td><ins>First Name</ins></td>
+			<td>
+				<input type="text" name="primer_nombre" id="primer_nombre" 
+				required="required" placeholder="Ingresa tu primer Nombre" size="20">
+				<br>
+				<small>First Name</small>
+			</td>
+		</tr>
+
+		<tr>
+			<td><ins>Second Name</ins></td>
+			<td>
+				<input type="text" name="segundo_nombre" id="segundo_nombre"
+				required="required" placeholder="Ingresa tu segundo Nombre" size="20">
+				<br>
+				<small>Second Name</small>
+			</td>
+		</tr>
+
+		<tr>
+			<td><ins>Firts Last Name</ins></td>
+			<td>
+				<input type="text" name="primer_apellido" id="primer_apellido"
+				required="required" placeholder="Ingresa tu primer Apellido" size="20">
+				<br>
+				<small>Firts Last Name</small>
+			</td>
+		</tr>
+
+		<tr>
+			<td><ins>Second Last Name</ins></td>
+			<td>
+				<input type="text" name="segundo_apellido" id="segundo_apellido"
+				required="required" placeholder="Ingresa tu segundo Apellido" size="20">
+				<br>
+				<small>Second Last Name</small>
+
+			</td>
+		</tr>
+
+		<tr>
+			<td><ins>DNI</ins></td>
+			<td>
+				<select>
+					<option value="V" title="venezolano">V</option>
+					<option value="E" title="extrangero">E</option>
+					<option value="J" title="juridico">J</option>
+					<option value="G" title="gubernamental">G</option>
+				</select>
+				<input type="number" name="cedula" id="c.i"
+				required="required" placeholder="Enter your DNI" title="Ingresa la cedula">
+			</td>
+		</tr>
+
+		<tr>
+			<td><ins>Birth date</ins></td>
+			<td>
+				<input type="date" name="nacimiento" id="fnacimiento"
+				required="required" title="Enter Birth date" max="2019-02-02">
+			</td>
+		</tr>
+
+		<tr>
+			<td><ins>Birthplace</ins></td>
+		<td>
+			<textarea placeholder="Enter Birthplace" id="lugarnaci"  cols="60" rows="3"></textarea>
+		</td>
+	</tr>
+
+		<tr>
+			<td><ins>Telephone Number</ins></td>
+			<td>
+				<input type="number" name="Telefono" id="ntelefono"
+				required="required" title="Enter Telephone Numbe"r placeholder="041xxxxxxxx">
+			</td>
+		</tr>
+
+		<tr>
+			<td><ins>Email</ins></td>
+		<td>
+			<input required="required" type="imail" name="Email" title="Ingresa correo"
+			id="Email" placeholder="llamamepapi@gmail.com">
+		</td>
+		</tr>
+
+		<tr>
+			<td><ins>Marital status</ins></td>
+		<td>
+			
+			<input required="required" type="radio" name="Estadocivil" value="Casado" id="Casado">
+			<label>Married</label>
+			
+			<input required="required" type="radio" name="Estadocivil" value="Soltero" id="soltero">
+			<label>Single</label>
+			
+			<input required="required" type="radio" name="Estadocivil" value="Divorsiado" id="Divorsiado">
+			<label>Divorced</label>
+
+			<input required="required" type="radio" name="Estadocivil" value="Viudo" id="Viudo">
+			<label>Widower</label>
+		</td>
+	</tr>
+
+	<tr>
+			<td><ins>Address</ins></td>
+		<td>
+			<textarea placeholder="mi casita jajaja" id="direccion" cols="60" rows="3"></textarea>
+		</td>
+	</tr>
+    
+    <tr>
+			<td class="perinfo">Academic track record</td>
+		</tr>
+
+	<tr>
+		<td><ins>Another Realized Studies</ins></td>
+		<td>
+			<input type="text" name="estu" id="estu" required="required" placeholder="Enter Another Realized Studies" size="60">
+			<br>
+			<small>Write Another Realized Studies</small>
+			<input type="button" name="add1" id="add1" value=" Add Another Realized Studies" style="background-color:#5ab3a9">
+		</td>
+		<tr>
+            <td colspan="2"> 
+            <table id="campo_agregado1">  
+            </table>
+            </td>
+    </tr>
+	</tr>
+           <tr>
+		<td><ins>University</ins></td>
+		<td>
+			<input type="text" name="uni" id="uni" required="required" placeholder="Enter University" size="60">
+			<br>
+			<small>Write University</small>
+			<input type="button" name="add2" id="add2" value=" Add University" style="background-color:#5ab3a9">
+		</td>
+		<tr>
+            <td colspan="2"> 
+            <table id="campo_agregado2">  
+            </table>
+            </td>
+    </tr>
+	</tr>
+	<tr>
+			<td class="perinfo">Labor track record</td>
+		</tr>
+<tr>
+		<td><ins>Place where you have worked</ins></td>
+		<td>
+			<input type="text" name="tra" id="tra" required="required" placeholder="Enter where you have worked " size="60">
+			<br>
+			<small>Write where you have worked</small>
+			<input type="button" name="add3" id="add3" value="Add Another Work" style="background-color:#5ab3a9">
+		</td>
+		<tr>
+            <td colspan="2"> 
+            <table id="campo_agregado3">  
+            </table>
+            </td>
+    </tr>
+	</tr>
+    
+    <tr>
+			<td class="perinfo">Personal reference</td>
+		</tr>
+
+		<tr>
+			<td><ins>Name</ins></td>
+			<td>
+				<input type="text" name="nombre" id="nombre" 
+				required="required" placeholder="Ingresa tu Nombre" size="20">
+				<br>
+				<small>Enter Name</small>
+			</td>
+		</tr>
+<tr>
+			<td><ins>Last Name</ins></td>
+			<td>
+				<input type="text" name="apellido" id="apellido"
+				required="required" placeholder="Ingresa tu Apellido" size="20">
+				<br>
+				<small>Enter Last Name</small>
+			</td>
+		</tr>
+<tr>
+			<td><ins>DNI</ins></td>
+			<td>
+				<select>
+					<option value="V" title="venezolano">V</option>
+					<option value="E" title="extrangero">E</option>
+					<option value="J" title="juridico">J</option>
+					<option value="G" title="gubernamental">G</option>
+				</select>
+				<input type="number" name="cedular" id="cir"
+				required="required" placeholder="Enter DNI" title="Ingresa la cedula">
+			</td>
+		</tr>
+<tr>
+			<td><ins>Telephone number</ins></td>
+			<td>
+				<input type="number" name="Telefonor" id="ntelefonor"
+				required="required" title="Enter Telephone number" placeholder="041xxxxxxxx">
+			</td>
+		</tr>
+
+		<tr>
+			<td><ins>Email</ins></td>
+		<td>
+			<input required="required" type="imail" name="Emailr" title="Ingresa correo"
+			id="Emailr" placeholder="llamamepapi@gmail.com">
+			<input type="button" name="add4" id="add4" value="Add Another Personal Reference" style="background-color:#5ab3a9">
+		</td>
+
+        <tr>
+            <td colspan="2"> 
+            <table id="campo_agregado4">  
+            </table>
+            </td>
+    </tr>
+
+		</tr>
+
+	</table>
+
+</body>
+</html>
+
+<script type="text/javascript">
+	
+var i=1;
+   $("#add1").on('click',function(event){
+    $("#campo_agregado1").append('<tr id="f1'+i+'"><td><ins>Another Studies</ins></td><td><input type="text" name="estu" id="estu" required="required" placeholder="Enter Another Realized Studies" size="60"><br><small>Add Another Studies</small><input type="button" name="delete"  style="background-color:red" value="DELETE" onclick="elimi_campos1('+i+')"></td></tr>'); 
+        i++;
+    });
+
+function elimi_campos1(i){
+        var nombre_f1="#f1";
+        var num="";
+        //---
+        var num_f1=i;
+        num=num_f1.toString();
+        var f1=nombre_f1.concat(num);
+        $(""+f1+"").empty();
+};
+
+</script>
+		
+<script type="text/javascript">
+
+	var j=1;
+   $("#add2").on('click',function(event){
+    $("#campo_agregado2").append('<tr id="f2'+j+'"><td><ins>University</ins></td><td><input type="text" name="uni" id="uni" required="required" placeholder="Enter University" size="60"><br><small>Add University</small><input type="button" name="delete"  style="background-color:red" value="DELETE" onclick="elimi_campos2('+j+')"></td></tr>'); 
+        j++;
+    });
+
+function elimi_campos2(j){
+        var nombre_f2="#f2";
+        var num="";
+        //---
+        var num_f2=j;
+        num=num_f2.toString();
+        var f2=nombre_f2.concat(num);
+        $(""+f2+"").empty();
+};
+
+</script>
+
+<script type="text/javascript">
+	
+var k=1;
+   $("#add3").on('click',function(event){
+    $("#campo_agregado3").append('<tr id="f3'+k+'"><td><ins>Another Work</ins></td><td><input type="text" name="tra" id="tra" required="required" placeholder="Enter where you have worked" size="60"><br><small>Enter where you have worked</small><input type="button" name="delete"  style="background-color:red" value="DELETE" onclick="elimi_campos3('+k+')"></td></tr>'); 
+        k++;
+    });
+
+function elimi_campos3(k){
+        var nombre_f3="#f3";
+        var num="";
+        //---
+        var num_f3=i;
+        num=num_f3.toString();
+        var f3=nombre_f3.concat(num);
+        $(""+f3+"").empty();
+};
+
+</script>	
+
+<script type="text/javascript">
+	
+ var a=1;
+   $("#add4").on('click',function(event){
+    $("#campo_agregado4").append('<tr id="f4'+a+'"><td><ins>Name</ins></td><td><input type="text" name="nombre" id="nombre" required="required" placeholder="Enter Name" size="20"><br><small>Name</small></td></tr><tr id="f5'+a+'"><td><ins>Last Name</ins></td><td><input type="text" name="apellido" id="apellido" required="required" placeholder="Enter Last Name" size="20"><br><small>Last Name</small></td></tr><tr id="f6'+a+'"><td><ins>DNI</ins></td><td><select><option value="V" title="venezolano">V</option><option value="E" title="extrangero">E</option><option value="J" title="juridico">J</option><option value="G" title="gubernamental">G</option></select><input type="number" name="cedular" id="cir" required="required" placeholder="Enter DNI" title="Ingresa la cedula"></td></tr><tr id="f7'+a+'"><td><ins>Telephone number</ins></td><td><input type="number" name="Telefonor" id="ntelefonor" required="required" title="Ingresa Telefono" placeholder="041xxxxxxxx"></td></tr><tr id="f8'+a+'"><td><ins>Email</ins></td><td><input required="required" type="imail" name="Emailr" title="Ingresa correo" id="Emailr" placeholder="llamamepapi@gmail.com"><input type="button" name="delete"  style="background-color:red" value="DELETE" onclick="elimi_campos4('+a+')"></td></tr>'); 
+        a++;
+    });
+
+function elimi_campos4(a){
+        var nombre_f4="#f4";
+        var num="";
+        var nombre_f5="#f5";
+        var num="";
+        var nombre_f6="#f6";
+        var num="";
+        var nombre_f7="#f7";
+        var num="";
+        var nombre_f8="#f8";
+        var num="";
+        //---
+        var num_f4=a;
+        num=num_f4.toString();
+        var f4=nombre_f4.concat(num);
+        $(""+f4+"").empty();
+        //---
+        var num_f5=a;
+        num=num_f5.toString();
+        var f5=nombre_f5.concat(num);
+        $(""+f5+"").empty();
+        //---
+        var num_f6=a;
+        num=num_f6.toString();
+        var f6=nombre_f6.concat(num);
+        $(""+f6+"").empty();
+        //---
+        var num_f7=a;
+        num=num_f7.toString();
+        var f7=nombre_f7.concat(num);
+        $(""+f7+"").empty();
+        //---
+        var num_f8=a;
+        num=num_f8.toString();
+        var f8=nombre_f8.concat(num);
+        $(""+f8+"").empty();
+};
+
+</script>
+	
