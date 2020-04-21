@@ -6,13 +6,11 @@
 	<script type="text/javascript" src="jquery.js"></script>
 </head>
 <body>
-
+<form action="recibir_formulario.php" method="post" name="formulario">
 	<div class="onlytitle">
 		<center><h1>Curriculum Vitae</h1></center>
 		<center><h4>Data recording</h4></center>
 	</div>
-
-	<form action="#" method="post" name="formu"></form>
 	<table width="70%" id="principal">
 		
 		<tr>
@@ -256,8 +254,12 @@
 
 		</tr>
 
-	</table>
+		<tr>
+			<td><input type="submit" name="enviar" value="Enviar"></td>
+		</tr>
 
+	</table>
+</form>
 </body>
 </html>
 
